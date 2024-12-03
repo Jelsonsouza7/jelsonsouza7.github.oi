@@ -1,0 +1,371 @@
+/* Configurações gerais para a fonte e cor do texto */
+* {
+    font-family: 'outfit', sans-serif;
+    color: #000;
+}
+
+/* Estilo para imagens */
+ img {
+    width: 300px;
+    padding: 50px;
+    height: auto;
+    margin: 20px auto;
+}
+
+/* Estilo para listas não ordenadas */
+ul {
+    list-style: none;
+    display: flex;
+    margin: 20px;
+}
+
+/* Estilo para itens da lista */
+ul li {
+    margin: 0 80px;
+}
+
+/* Estilo para links dentro dos itens da lista */
+ul li a {
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    transition: .2s;
+    display: block;
+    position: relative;
+    padding: 5px;
+    background-color: rgb(2, 36, 36);
+}
+
+/* Reduz a opacidade dos links quando o mouse está sobre a lista */
+ul:hover li a {
+    opacity: .3;
+}
+
+/* Aumenta a opacidade e escala do link quando o mouse passa sobre ele */
+ul li a:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* Efeito de destaque com pseudo-elemento antes do link */
+ul li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: 0.2s;
+}
+
+/* Animação ao passar o mouse sobre o link */
+ul li a:houver::before {
+    transform-origin: left;
+    transform: scaleX(1);
+    transition: transform 0.2s;
+    background-color: aqua;
+}
+
+/* Estilo para links gerais */
+a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+/* Cor ao passar o mouse sobre links gerais */
+a:hover {
+    color: blue;
+}
+
+/* Classe para links especiais */
+.a-link {
+    color: rgb(255, 255, 255);
+    background-color: rgb(60, 22, 167);
+    border-radius: 5px;
+}
+
+/* Alinhamento justificado para parágrafos */
+p {
+    text-align:center;
+}
+
+/* Estilo para títulos <h2> */
+h2 {
+    border-radius: 10px;
+    border: 2px solid rgb(17, 26, 153);
+    text-align: center;
+    background-color: rgb(58, 67, 203);
+    color: #1b1b1b;
+}
+
+/* Alinhamento central para títulos <h1> */
+h1 {
+    text-align: center;
+}
+
+/* Alinhamento central para títulos <h3> e <h4> */
+h3,
+h4 {
+    text-align: center;
+}
+
+/* Container com layout flexível */
+.container {
+    display: flex;
+    padding: 10px;
+}
+
+/* Container com layout inline */
+.container2 {
+    display: inline;
+}
+
+/* Parágrafos alinhados à direita */
+.p-edit {
+    text-align: end;
+}
+
+/* Estilo para conteúdo oculto */
+.conteudo {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+
+
+/* Corpo da página com layout centralizado Feedback */
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+}
+
+/* Estilo do formulário */
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilo para título do formulário */
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Grupo de entrada do formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilo para rótulos */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Estilo para entradas de texto e textarea */
+.form-group input,.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Ajustes específicos para textarea */
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Mensagens de erro no formulário */
+.form-group .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+/* Estilo da galeria */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* A imagem dentro do modal */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* O botão de fechar */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Tamanho das imagens de Pontos Turisticos */
+.img-meio {
+    position: relative;
+    left: 450px;
+    width: 500px;
+}
+
+/*Tamanho das imagens do Home */
+.img-home {
+    position: relative;
+    left: 500px;
+    width: 300px;
+}
+
+/* para pagina de curiosidade,  imagem com informações */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container {
+    margin-right: 20px;
+}
+
+#image1, #image2, #image3, #image4, #image5, #image6, #image7, #image8 {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.info {
+    display: none;
+    margin-top: 10px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.info.show {
+    display: block;
+}
+
+
+/* Galeria de imagens */
+.galeria-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.galeria-imagens .click-img {
+    width: 500px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 80px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.galeria-imagens .click-img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-modal {
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.fechar {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fechar:hover {
+    color: #ccc;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilhas Salomão - Galeria</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="PontosTuristicos.html">Pontos Turísticos</a></li>
+            <li><a href="Curiosidades.html"> Curiosidades</a></li>
+            <li><a href="Galeria.html">Galeria</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    
+    
+    <h1>Galeria de Imagens</h1>
+
+    <!-- Galeria de imagens -->
+    <div class="galeria-imagens">
+        <img src="/img/galeria01.jpg" alt="Curiosidade 1" class="click-img" onclick="abrirModal(this)">
+        <img src="/img/Galeria02.avif" alt="Curiosidade 2" class="click-img" onclick="abrirModal(this)">
+        <img src="/img/galeria03.webp" alt="Curiosidade 3" class="click-img" onclick="abrirModal(this)">
+        <img src="/img/galeria04.webp" alt="Curiosidade 4" class="click-img" onclick="abrirModal(this)">
+        <!-- Adicione mais imagens conforme necessário -->
+    </div>
+
+    <!-- Modal para exibir a imagem em tamanho maior -->
+    <div id="modal" class="modal">
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+        <img class="imagem-modal" id="imagem-modal">
+    </div>
+
+
+    <nav>
+        <br>
+        <h2>Referências e Links de Pesquisa</h2>
+        <br>
+        <p>Link de pesquisa Ilhas Salomao
+            <a class="a-link"
+                href="https://pt.wikipedia.org/wiki/Ilhas_Salom%C3%A3o">https://pt.wikipedia.org/wiki/Ilhas_Salom%C3%A3o</a>
+        </p>
+        <br>
+        <br>
+        <p>Link de pesquisa dos Pontos Turisticos das Ilhas Salomao
+            <a class="a-link"
+                href="https://viajandocommoises.com.br/pontos-turisticos-de-ilhas-salomao/">https://viajandocommoises.com.br/pontos-turisticos-de-ilhas-salomao/</a>
+        </p>
+        <br>
+        <br>
+        <p>Link de pesquisa de curiosidades das Ilhas Salomao
+            <a class="a-link"
+                href="https://abordodomundo.com/2017/07/14/curiosidades-das-ilhas-salomao">https://abordodomundo.com/2017/07/14/curiosidades-das-ilhas-salomaof</a>
+        </p>
+    </nav>
+    <script src="/script.js"></script>
+
+    <br>
+    <br>
+</body>
+
+<footer>
+
+    <br>
+    <br>
+    <p class="p-edit">Escola Superior Batista do Amazonas <br>
+        Jelson de Souza Inema <br>
+        Breno de Souza Melgueiro <br>
+        Análise e Desenvolvimento de Sistemas <br>
+        Turma B Noturno </p>
+</footer>
+
+</html>
